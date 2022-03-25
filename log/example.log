@@ -1,2 +1,4 @@
 2022-03-23 16:26:47,530 DEBUG o.e.App [main] test
-2022-03-23 16:26:47,531 ERROR o.e.App [main] error xd
+2022-03-25 16:56:36,277 ERROR o.e.App [main] com.solvd.ReservationDeniedException: This room is exclusively for professors
+2022-03-25 17:22:31,482 ERROR o.e.App [main] com.solvd.exceptions.ReservationDeniedException: This room is exclusively for professors
+2022-03-25 17:22:31,492 ERROR o.e.App [main] com.solvd.exceptions.SalaryZeroException: The salary can't be zero
