@@ -2,3 +2,6 @@
 2022-03-25 16:56:36,277 ERROR o.e.App [main] com.solvd.ReservationDeniedException: This room is exclusively for professors
 2022-03-25 17:22:31,482 ERROR o.e.App [main] com.solvd.exceptions.ReservationDeniedException: This room is exclusively for professors
 2022-03-25 17:22:31,492 ERROR o.e.App [main] com.solvd.exceptions.SalaryZeroException: The salary can't be zero
+2022-03-30 17:18:47,670 ERROR o.e.App [main] com.solvd.exceptions.ReservationDeniedException: This room is exclusively for professors
+2022-03-30 17:18:47,672 ERROR o.e.App [main] com.solvd.exceptions.SalaryZeroException: The salary can't be zero
+2022-03-30 17:18:47,680 ERROR o.e.App [main] java.lang.IndexOutOfBoundsException

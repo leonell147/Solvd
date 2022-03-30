@@ -2,6 +2,7 @@ package org.example;
 
 import com.solvd.exceptions.ReservationDeniedException;
 import com.solvd.exceptions.SalaryZeroException;
+import com.solvd.linkedList.LinkedList;
 import com.solvd.model.person.Employee;
 import com.solvd.model.person.Person;
 import com.solvd.model.person.Professor;
@@ -31,6 +32,14 @@ public class App
         try {
             Employee e1 = new Professor(35, "Chad", 1.8f, 79.3f, 0);
         }catch (SalaryZeroException e){
+            logger.error(e);
+        }
+        LinkedList<Integer> list= new LinkedList();
+        try{
+            list.add(new Integer(2));
+            list.add(2, new Integer(1));
+
+        }catch (Exception e){
             logger.error(e);
         }
     }
