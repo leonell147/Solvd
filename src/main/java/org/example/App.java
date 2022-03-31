@@ -2,6 +2,7 @@ package org.example;
 
 import com.solvd.exceptions.ReservationDeniedException;
 import com.solvd.exceptions.SalaryZeroException;
+import com.solvd.fileHandler.March31;
 import com.solvd.linkedList.LinkedList;
 import com.solvd.model.person.Employee;
 import com.solvd.model.person.Person;
@@ -13,6 +14,8 @@ import com.solvd.model.university.Room;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.imageio.IIOException;
+import java.io.IOException;
 import java.util.Date;
 
 
@@ -40,6 +43,11 @@ public class App
             list.add(2, new Integer(1));
 
         }catch (Exception e){
+            logger.error(e);
+        }
+        try {
+            March31.task("E:\\Solvd\\TA-Solvd\\src\\main\\resources\\article.txt");
+        }catch(IOException e){
             logger.error(e);
         }
     }
