@@ -1,49 +1,35 @@
 package com.solvd.model.university;
 
-import com.solvd.model.person.Employee;
-import com.solvd.model.person.Student;
-import com.solvd.model.university.Departament;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
 
 public class University {
     private String name;
-    private ArrayList<Departament> departaments;
-    private LinkedList<Employee> employees;
-    private LinkedList<Student> students;
+    private ArrayList<Department> departments;
+
+    private List<Report> reports;
 
     public University(String name) {
         this.name = name;
-        departaments=new ArrayList<Departament>();
-        employees= new LinkedList<Employee>();
-        students= new LinkedList<Student>();
+        departments = new ArrayList<Department>();
+        reports = new ArrayList<Report>();
+
     }
 
-    public ArrayList<Departament> getDepartaments() {
-        return departaments;
+    public ArrayList<Department> getDepartaments() {
+        return departments;
     }
 
-    public void addDepartaments(ArrayList<Departament> departament) {
-        this.departaments.addAll(departament);
-    }
-    public void addDepartaments(Departament departament) {
-        this.departaments.add(departament);
+    public void addDepartaments(ArrayList<Department> department) {
+        this.departments.addAll(department);
     }
 
-    public LinkedList<Employee> getEmployees() {
-        return employees;
+    public void addDepartament(Department department) {
+        this.departments.add(department);
     }
 
-    public void addEmployees(LinkedList<Employee> employees) {
-        this.employees.addAll(employees);
+    public void addReport(Report report){
+
     }
 
-    public LinkedList<Student> getStudents() {
-        return students;
-    }
-
-    public void addStudents(LinkedList<Student> students) {
-        this.students.addAll(students);
-    }
 }

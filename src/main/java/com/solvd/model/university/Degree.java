@@ -4,28 +4,28 @@ import java.util.ArrayList;
 
 public class Degree {
     private String name;
-    private Departament departament;
+    private Department department;
     private ArrayList<Subject> subjects;
 
-    public Degree(String name, Departament departament){
+    public Degree(String name, Department department){
         this.name= name;
-        this.departament=departament;
+        this.department = department;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setDepartament(Departament departament) {
-        this.departament = departament;
+    public void setDepartament(Department department) {
+        this.department = department;
     }
 
     public void addSubjects(ArrayList<Subject> subject) {
         this.subjects.addAll(subject);
     }
 
-    public Departament getDepartament() {
-        return departament;
+    public Department getDepartament() {
+        return department;
     }
 
     public String getName() {

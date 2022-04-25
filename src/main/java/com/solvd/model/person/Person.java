@@ -1,6 +1,6 @@
 package com.solvd.model.person;
 
-public class Person {
+public abstract  class Person {
     private int age;
     private String name;
     private float height;
